@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>GPD visualization</title>
+        <link href="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+		<style>
+            
+			html, body { margin: 0; height: 100%;}
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Horizontal centering */
+                align-items: center;     /* Vertical centering */
+                margin: 0.5%;
+            }
+            .slider{
+                width: 30%;
+                margin: 2%;
+            }
+            #three-container{
+                margin: 0 auto;
+                height: 80%;
+                width: 80%;
+            }
+
+		</style>
+	</head>
+	<body>
+        <div id="three-container"></div>
+        <div class="container">
+        </div>
+
+        <div class="container">
+            <div class="slider" id="slider_x"></div>
+            <div class="slider" id="slider_t"></div>
+        </div>
+
+        <script src="colormap.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
